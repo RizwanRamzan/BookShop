@@ -1,0 +1,57 @@
+@import "../../general_style/variable";
+
+.sub-header {
+  background-color: white;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  .tab {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 0px;
+    column-gap: 23px;
+    P {
+      margin: 0;
+      font-size: 14px;
+      letter-spacing: 2px;
+      font-weight: 300;
+      padding: 15px 0;
+      position: relative;
+      cursor: pointer;
+      @media screen and (max-width: 992px) {
+        font-size: 12px;
+      }
+      // &::after {
+      //   content: "";
+      //   position: absolute;
+      //   height: 2px;
+      //   width: 0%;
+      //   background-color: $primaryColor;
+      //   transition: 0.5s ease-in-out;
+      //   bottom: 0;
+      //   left: 0;
+      // }
+      // &:hover {
+      //   &::after {
+      //     content: "";
+      //     position: absolute;
+      //     height: 2px;
+      //     width: 100%;
+      //     background-color: $primaryColor;
+      //     bottom: 0;
+      //     left: 0;
+      //   }
+      // }
+    }
+
+    .activeClass {
+      background-color: $bgColor;
+      padding: 15px 15px;
+      border-top-right-radius: 16px;
+      border-top-left-radius: 16px;
+    }
+  }
+}

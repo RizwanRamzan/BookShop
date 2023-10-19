@@ -1,0 +1,137 @@
+@import "../../general_style/variable";
+
+// .sub-categories {
+//   display: flex;
+//   justify-content: center;
+//   gap: 20px;
+//   .sub-categories-left {
+//   }
+
+//   .sub-categories-right {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     @media screen and (max-width: 768px) {
+//       margin-top: 220px;
+//       width: 100%;
+//     }
+
+//   }
+// }
+
+.img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  @media screen and (max-width: 768px) {
+    margin-top: 100px;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+// --------------
+
+.sub-categories-right {
+  @media screen and (max-width: 768px) {
+    margin-top: 100px;
+  }
+  .title {
+    h1 {
+      font-size: 26px;
+      // margin: 0;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 12px;
+      letter-spacing: 3px;
+    }
+  }
+
+  h4 {
+    font-size: 14px;
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+
+  .price {
+    margin-top: 20px;
+    h3 {
+      font-size: 18px;
+      font-weight: 400;
+    }
+    p {
+      color: red;
+      font-size: 12px;
+    }
+  }
+
+  .quantity {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    h3 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 400;
+    }
+    .plus-minus {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-top: 10px;
+      .plus {
+        font-size: 12px;
+        border: 1px solid $secondryColor;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        padding: 3px;
+        transition: 0.3s ease-in;
+        cursor: pointer;
+        &:hover {
+          background-color: $primaryColor;
+          border: 1px solid $primaryColor;
+          color: white;
+        }
+      }
+      .minus {
+        font-size: 12px;
+        border: 1px solid $secondryColor;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        padding: 3px;
+        transition: 0.3s ease-in;
+        cursor: pointer;
+        &:hover {
+          background-color: $primaryColor;
+          border: 1px solid $primaryColor;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .discalimer {
+    margin-bottom: 20px;
+    p {
+      font-size: 13px;
+      span {
+        color: red;
+      }
+    }
+  }
+
+  .description {
+    h3 {
+      font-size: 18px;
+      font-weight: 400;
+    }
+    p {
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+  }
+}
